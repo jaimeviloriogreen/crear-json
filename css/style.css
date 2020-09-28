@@ -21,7 +21,7 @@ html{
 .contenedor{
     width: 90%;
     max-width: 600px;
-    margin: 6.25rem auto;
+    margin: 3.125rem auto;
     border: 2px solid var(--color2);
     border-radius: .5rem;
     padding: 1rem;
