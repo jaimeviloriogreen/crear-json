@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --color1: #ffffff;
+    --color2: #0000007a;
+    --color3: #F0F3F5;
+    --color4:#2b67f5;
+
+    --fuente1:'Raleway', sans-serif;
+    --fuente2: 'Roboto', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 600px;
+    margin: 6.25rem auto;
+    border: 2px solid var(--color2);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.contenedor h1{
+    font-family: var(--fuente1);
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow:  column nowrap;
+}
+
+form > *{
+    margin: .5rem;
+    padding: .25rem;
+    font-size: .8rem;
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: var(--color4);
+    border-radius: .125rem;
+    font-size: 1rem;
+    color: var(--color1);
+    cursor: pointer;
+}
