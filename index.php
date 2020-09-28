@@ -1,5 +1,4 @@
 <?php 
-require ('conexion.php');
 require ('vista.php');
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -8,6 +7,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $personas = array();
         
             if(file_exists('personas.json')){
+                echo json_encode('Existe');
+
                 $datosPersonas = file_get_contents("personas.json");
                 if(!empty($datosPersonas)){
                     $jsonPersonas = json_decode($datosPersonas, true);
@@ -15,6 +16,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                         array_push($personas, $person);
                         };
                 }
+            }else{
+                echo json_encode('No Existe');
             }
     
             $arreglo = [
